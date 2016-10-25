@@ -7,14 +7,30 @@
 	  <script src="pong.js"></script>
 	  <link rel="stylesheet" type="text/css" href="pong.css"/>
 	  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>           
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.js"></script> 
 	</head>
 
 	<body>
-		<div><a id='materialize' class="waves-effect waves-light btn-large" href = "start.html">1 Player</a>
-		<span><a id='materializes' class="waves-effect waves-light btn-large" href = "start.html">2 Players</a></span></div>
+
+		<!-- <div class="start-menu">
+			<div class="container">
+				<div class="player-button">1 Player Mode</div>
+					<div class="player-button">2 Player Mode</div>
+			</div>
+		</div> -->
+
+
+					<audio src="sound/pop.mp3" id ="collide" preload="auto"></audio>
+				<audio src="sound/clap.mp3" id ="finish" preload="auto"></audio>
+			  <canvas id="gameCanvas" width="800" height="600"></canvas>
+			</body>
+
+
+		<!-- <div><a id='materialize' class="waves-effect waves-light btn-large" href = "start.html">1 PLAYER MODE</a>
+		<span><a id='materializes' class="waves-effect waves-light btn-large" href = "start.html">2 PLAYERS MODE</a></span></div> -->
+		
   </body>
 
 </html> 
