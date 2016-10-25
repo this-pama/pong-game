@@ -12,13 +12,18 @@
   margin-left: -100px;
 }
 
-#materializes {
+
+.pause-menu, .start-menu {
   position: absolute;
-  top: 70%;
-  left: 20%;
-  margin-top: 130px;
-  margin-left: 300px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: none;
 }
+
+
 
 html { 
   background: url(img/header-bg2.jpg) no-repeat center center fixed; 
