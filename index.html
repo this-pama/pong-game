@@ -25,12 +25,6 @@
     <link href="css/agency.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
@@ -42,7 +36,7 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    <span class="sr-only"></span> Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand " href="#page-top">Pong game</a>
             </div>
@@ -55,7 +49,7 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#About">About</a>
-                    </li>
+                    </li>           
                     <li>
                         <a class="page-scroll" href="#Instruction">Instruction</a>
                     </li>
@@ -72,27 +66,24 @@
 
     <!-- Header -->
     <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Welcome to Pong Game!</div>
-                    <div class="intro-heading">Andela Bootcamp project</div>
-               
-                        <span> <a href="#About" class="page-scroll btn btn-xl">Learn More About Pong Game</a></span>
-                            <span>   <a href="./start.html" class=" btn btn-xl">Play Game</a></p></span>
-                </div>
-        </div>
-    </header>
-
-
-
-
-<div class="start-menu">
-            <div class="container" id='custom.css'>
-                <div class="player-button">1 Player Mode</div>
-                    <div class="player-button">2 Player Mode</div>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in">Welcome to Pong Game!</div>
+            <div class="intro-heading">Andela Bootcamp project</div> 
+            <div class="row">
+                <span> <a href="#About" class="page-scroll btn btn-xl col-sm-6 col-sm-offset-3">Learn More About Pong Game</a></span>
             </div>
-        </div>
+            <br>
+            <div class="row">
+                <span> <a href="./start.html" class="page-scroll btn btn-xl col-sm-2 col-sm-offset-5">Play Game</a></span>
+            </div>
 
+        </div>          
+                
+    </div>
+        
+    </header>
 
 
     <!-- Services Section -->
@@ -105,7 +96,7 @@
 
 					  <p>Pong was originally meant only as a training exercise for a new gaming developer at Atari, Allan Alcorn, and wasn’t intended to be released as a consumer product.Initially, during the developmental stages, Alcorn found it quite boring, so decided to spruce it up a bit by making the ball bounce off the paddle at different angles, depending on what segment of the paddle was hit.  He also had the ball progressively move at a faster rate after each successful return.  By a happy accident of a defective circuit, the game also featured a space at the top of the screen which was unreachable by the paddles and which Alcorn felt made the game more fun, as skilled players could try to aim for that spot.</p>
 
-					<p> Over the years, Pong game has gained popularity and has become one of the most common game around has many developers has release differnt versions of the game.</p></h3>
+					<p> Over the years, Pong game has gained popularity and has become one of the most common game around and many developers has release differnt versions of the game.</p></h3>
 
 
 
@@ -116,21 +107,16 @@
         
     </section>
 
-
-
-
-
-
 	<section id="Instruction">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 ">
                     <h2 class="section-heading text-center">Instruction</h2>
-                   <p> <h3 class="section-subheading text-muted"><p>Pong is one of the earliest arcade video games and the very first sports arcade video game. It is a table tennis sports game featuring simple two-dimensional graphics. While other arcade video games such as Computer Space came before it, Pong was one of the first video games to reach mainstream popularity.The game was originally manufactured by Atari, which released it in 1972.</p>
+                   <p> <h3 class="section-subheading text-muted"><p>The game is played by passing a ball between two players. In other to win the game, a player must ensure he/she gets 11 points in each session of the game before the other player. A player gets a point when his opponent misses the ball.  </p>
+                        <p>To start the game, kindly click on Start Game button. Ensure to input your name when prompted by the computer. </p>
+					  <p>To control the paddle, make use of the mmouse. The paddle respond to the movement of the mouse cursor across the screen.</p>
+                      <p>Enjoy the game. Thank you.</p>
 
-					  <p>Pong was originally meant only as a training exercise for a new gaming developer at Atari, Allan Alcorn, and wasn’t intended to be released as a consumer product.Initially, during the developmental stages, Alcorn found it quite boring, so decided to spruce it up a bit by making the ball bounce off the paddle at different angles, depending on what segment of the paddle was hit.  He also had the ball progressively move at a faster rate after each successful return.  By a happy accident of a defective circuit, the game also featured a space at the top of the screen which was unreachable by the paddles and which Alcorn felt made the game more fun, as skilled players could try to aim for that spot.</p>
-
-					<p> Over the years, Pong game has gained popularity and has become one of the most common game around has many developers has release differnt versions of the game.</p></h3>
 
 
 
@@ -171,12 +157,7 @@
         </div>
     </footer>
 
-    <!-- Portfolio Modals -->
-    <!-- Use the modals below to showcase details about your portfolio projects! -->
-
-    <!--  -->
-
-    <!-- jQuery -->
+    
     <script src="vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
