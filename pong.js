@@ -1,3 +1,4 @@
+var name= prompt('What is your name please?').toUpperCase();
 var canvas;
 var canvasContext;
 var ballX = 30;
@@ -56,7 +57,15 @@ function ballReset() {
 	ballY = canvas.height/2;
 }
 
-
+//create computer paddle's motion
+function computerMovement() {
+	var paddle2YCenter = paddle2Y + (PADDLE_HEIGHT/2);
+	if(paddle2YCenter < ballY - 35) {
+		paddle2Y = paddle2Y + 2;
+	} else if(paddle2YCenter > ballY + 35) {
+		paddle2Y = paddle2Y - 2;
+	}
+}
 
 //move the ball and paddles
 function moveBallAndPaddle() {
@@ -120,7 +129,7 @@ function drawEverything() {
 		if(player1Score >= WINNING_SCORE) {
 			;
 			canvasContext.font = "50px serif"
-			canvasContext.fillText("You won!", 300, 200);
+			canvasContext.fillText(name + " " +" won!", 300, 200);
 		} else if(player2Score >= WINNING_SCORE) {
 			canvasContext.font = "50px serif"
 			canvasContext.fillText("Computer won!", 250, 200);
