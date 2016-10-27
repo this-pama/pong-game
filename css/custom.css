@@ -1,0 +1,52 @@
+.intro-heading {
+	color: yellow;
+}
+
+
+section {
+	padding-top: 50px !important;
+}
+
+.pause-menu, .start-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: none;
+}
+
+
+.player-button, .player-level, .player-got-it {
+		width: 300px;
+		height: 50px;
+		line-height: 50px;
+		font-size: 30px;
+		color: white;
+		background: darkred;
+		border: 5px solid rgba(255, 255, 0, 0.5);
+		display: inline-block;
+		font-family: sans-serif;
+		border-radius: 5px;
+		margin: 5px;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+	}
+
+	.player-button:hover, .player-level:hover, .player-got-it:hover {
+		-webkit-transform: scale(1.05);
+	}
+
+	.player-button:active, .player-level:active, .player-got-it:active {
+		-webkit-transform: scale(0.95);
+	}
+
+	.levels, .controls {
+		display: none;
+	}
+  

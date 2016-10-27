@@ -1,0 +1,42 @@
+#gameCanvas {
+	display: block;
+	margin: 0 auto;
+	box-shadow: 5px 5px 3px #888888;
+}
+
+#materialize {
+	position: fixed;
+  top: 30%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+}
+
+
+.pause-menu, .start-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: none;
+}
+
+
+
+html { 
+  background: url(img/header-bg2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#pong {
+	z-index: 900;
+	color: red;
+}
+
+
+
