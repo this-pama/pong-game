@@ -10,14 +10,14 @@ Click [here] https://github.com/adedapopaul/pong-game to access it on github.
 
 
 ##Features:
-*Mobile responsive web application.
-*Intelligent computer as opponent.
+* Mobile responsive web application.
+* Intelligent computer as opponent.
 
 ##Dependencies.
-1.HTML5
-2.Vanilla JS
-2.Materialize Framework
-3.JQuery JS library (required by Materialize Framework)
+1. HTML5
+2. Vanilla JS
+2. Materialize Framework
+3. JQuery JS library (required by Materialize Framework)
 
 
 ##Game Instruction:
