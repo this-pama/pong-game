@@ -6,7 +6,7 @@ Pong is one of the earliest arcade video games and the very first sports arcade 
 Pong was originally meant only as a training exercise for a new gaming developer at Atari, Allan Alcorn, and wasn’t intended to be released as a consumer product.Initially, during the developmental stages, Alcorn found it quite boring, so decided to spruce it up a bit by making the ball bounce off the paddle at different angles, depending on what segment of the paddle was hit. He also had the ball progressively move at a faster rate after each successful return. By a happy accident of a defective circuit, the game also featured a space at the top of the screen which was unreachable by the paddles and which Alcorn felt made the game more fun, as skilled players could try to aim for that spot.
 
 Over the years, Pong game has gained popularity and has become one of the most common game around and many developers has release differnt versions of the game.
-Click [here] https://github.com/adedapopaul/pong-game to access it on github.
+Click [here] (https://github.com/adedapopaul/pong-game) to access it on github.
 
 
 ##Features:
