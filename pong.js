@@ -1,6 +1,7 @@
 var name= prompt('What is your name please?').toUpperCase();
 var canvas;
 var canvasContext;
+// var loadMusic = null,
 var ballX = 30;
 var ballY = 30;
 var ballSpeedX = 5;
@@ -19,14 +20,18 @@ const PADDLE_HEIGHT = 100;
 var collision = null;
 var finish = null;
 
+
+
 //starts game only after all other assests have been loaded
 window.onload = function() {
     canvas = document.getElementById('gameCanvas');
 	canvasContext = canvas.getContext('2d');
 	collision = document.getElementById("collide");
 	finish = document.getElementById("finish");
-
-	var framesPerSecond = 60;
+	
+var framesPerSecond = 150;
+	
+	
 
   	setInterval(function() {
 			moveBallAndPaddle();
@@ -57,12 +62,13 @@ function ballReset() {
 	ballY = canvas.height/2;
 }
 
+
 //create computer paddle's motion
 function computerMovement() {
 	var paddle2YCenter = paddle2Y + (PADDLE_HEIGHT/2);
-	if(paddle2YCenter < ballY - 35) {
+	if(paddle2YCenter < ballY - 30) {
 		paddle2Y = paddle2Y + 2;
-	} else if(paddle2YCenter > ballY + 35) {
+	} else if(paddle2YCenter > ballY + 30) {
 		paddle2Y = paddle2Y - 2;
 	}
 }
@@ -127,15 +133,15 @@ function drawEverything() {
 		canvasContext.fillStyle = 'white';
 
 		if(player1Score >= WINNING_SCORE) {
-			;
+			
 			canvasContext.font = "50px serif"
-			canvasContext.fillText(name + " " +" won!", 300, 200);
+			canvasContext.fillText(name + " " +" won!", 500, 200);
 		} else if(player2Score >= WINNING_SCORE) {
 			canvasContext.font = "50px serif"
-			canvasContext.fillText("Computer won!", 250, 200);
+			canvasContext.fillText("Computer won!", 450, 200);
 		}
 		canvasContext.font = "25px serif"
-		canvasContext.fillText("Click anywhere to restart", 300, 500);
+		canvasContext.fillText("Click anywhere to restart", 500, 500);
 		return;
 	}
 
