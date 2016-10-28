@@ -7,6 +7,7 @@ Pong was originally meant only as a training exercise for a new gaming developer
 
 Over the years, Pong game has gained popularity and has become one of the most common game around and many developers has release differnt versions of the game.
 Click [here] (https://github.com/adedapopaul/pong-game) to access it on github.
+You can also check out the app [here] (https://adedapopaul.github.io/pong-game/).
 
 
 ##Features:
