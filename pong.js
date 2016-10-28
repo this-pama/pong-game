@@ -33,6 +33,24 @@ window.onload = function() {
 			yCordinateOfPaddle1 = mousePosition.y - (PADDLE_HEIGHT/2);
 		});
 }
+//calculates mouse position
+function calculateMousePosition(mouseClick) {
+	var rectangle = canvas.getBoundingClientRect();
+	var root = document.documentElement;
+	var xAxisOfMouse = mouseClick.clientX - rectangle.left - root.scrollLeft;
+	var yAxisOfMouse = mouseClick.clientY - rectangle.top - root.scrollTop;
+	return {
+		x:xAxisOfMouse,
+		y:yAxisOfMouse
+	};
+}
+function handleMouseClick(mouseClick) {
+	if(resultOutput) {
+		player1Score = 0;
+		player2Score = 0;
+		resultOutput = false;
+	}
+}
 //resets the ball to the center
 function resetBall() {
 	if(player1Score >= winningScore ||
@@ -66,7 +84,7 @@ function moveBallAndPaddle() {
 			ballSpeedOnXAxis = -ballSpeedOnXAxis;
 			collisionMusic.play();
 			var deltaY = yCordinateOfBall-(yCordinateOfPaddle1+PADDLE_HEIGHT/2);
-			ballSpeedOnYAxis = deltaY * 0.10;
+			ballSpeedOnYAxis = deltaY * 0.08;
 
 		} else {
 			player2Score++; 
@@ -78,7 +96,7 @@ function moveBallAndPaddle() {
 			ballSpeedOnXAxis = -ballSpeedOnXAxis;
 			collisionMusic.play();
 			var deltaY = yCordinateOfBall-(yCordinateOfPaddle2+PADDLE_HEIGHT/2);
-			ballSpeedOnYAxis = deltaY * 0.10;
+			ballSpeedOnYAxis = deltaY * 0.08;
 		} else {
 			player1Score++; 
 			resetBall();	
@@ -93,6 +111,11 @@ function drawCenterLine() {
 	for(var i=0;i<canvas.height;i+=40) {
 		rectangleColor(canvas.width/2-1,i,2,20,'white');
 	}
+}
+//draws a rectangle
+function rectangleColor(leftX,topY, width,height, drawColor) {
+	canvasContext.fillStyle = drawColor;
+	canvasContext.fillRect(leftX,topY, width,height);
 }
 //draws the ball and paddles
 function drawBallAndPaddle() {
@@ -129,27 +152,4 @@ function ballColor(centerX, centerY, radius, drawColor, fontType) {
 	canvasContext.beginPath();
 	canvasContext.arc(centerX, centerY, radius, 0,Math.PI*2,true);
 	canvasContext.fill();
-}
-//draws a rectangle
-function rectangleColor(leftX,topY, width,height, drawColor) {
-	canvasContext.fillStyle = drawColor;
-	canvasContext.fillRect(leftX,topY, width,height);
-}
-//calculates mouse position
-function calculateMousePosition(mouseClick) {
-	var rectangle = canvas.getBoundingClientRect();
-	var root = document.documentElement;
-	var xAxisOfMouse = mouseClick.clientX - rectangle.left - root.scrollLeft;
-	var yAxisOfMouse = mouseClick.clientY - rectangle.top - root.scrollTop;
-	return {
-		x:xAxisOfMouse,
-		y:yAxisOfMouse
-	};
-}
-function handleMouseClick(mouseClick) {
-	if(resultOutput) {
-		player1Score = 0;
-		player2Score = 0;
-		resultOutput = false;
-	}
 }
